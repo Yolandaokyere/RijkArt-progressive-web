@@ -1,0 +1,45 @@
+// Uitleg lay-out
+// 1. variabelen, 2. user story, 3. functies; 
+
+// Eerst wordt er een variabele gemaakt van de API key van het rijksmuseum Dit wordt gedaan met 'const endpoint'
+// const endpoint = API rijksmuseum link 
+
+// Hierna wordt deze variabele gelogt met '.then functie response > return response'(een reactie (responstie) van de data en deze terugloggen) 
+// en '.then functie rijksmuseumData > console.log' (data van de het respons wordt opgenomen dit is dan ook te zien).
+// Denk aan meet & regeltechniek response en data 
+// Deze functie zijn terug te lezen in sectie 3.
+
+// .then(function(rijksmuseumData) hierbij geef ik aan dat mijn nieuwe functie de Rijksmuseum data is 
+// krijg kunst = functie 
+// eventloop = alle data gegevevns van top tot teen oftewel alld arrays.
+// let en var zijn ongeveer hetzelfde alleen gaat var over de gehele functie en daarom wordt er gebruik gemaakt van 'let'
+// 0=array 
+// q=vermeer (om te typen = zoekveld )
+
+ // Functie kunst generen in HTML
+    // $('ul') = hetzelfde als document.querySelector. Alleen wordt het niet aangeraden om j.query te gebruiken. 
+   // Hierbij geef ik specifiek aan dat deze in de body zit. ('body ul') de ul staat ook aangeveven in de HTML.
+  // op de pagina wordt tot 20 opgeteld <20, daarna wordt er op de volgende pagina weer opgeteld tot 20 'kunst++
+ // 'beforebegin' geeft aan waar deze in de unorder (ul) list komt. in dit geval dus in de HTML. met de js. functie; insertAdjacentHTML wordt de list in de HTML genereerd.
+// list.insertAdjacentHTML('beforebegin', '<li><a href="#"></li>' = voor elk onderdeel wordt een list item gemaakt.https://data.rijksmuseum.nl/object-metadata/api/ (uitleg API-key ophalen voor het rijksmuseum)
+https://www.rijksmuseum.nl/api/nl/collection?key=[api-key]&involvedMaker=Rembrandt+van+Rijn (Link naar het API-key)
+Sleutel aangevraagd via de geadvenceerde instellingen 
+API key = API key GnjcnmeH
+Collectie aanvragen met de API key
+https://www.rijksmuseum.nl/api/nl/collection?key=[api-key]&involvedMaker=Rembrandt+van+Rijn
+https://www.rijksmuseum.nl/api/nl/collection?key=[GnjcnmeH]&involvedMaker=Rembrandt+van+Rijn
+
+
+ul = een niet geordend lijst. Een menu opgebouwd uit onderdelen is = ongeordend list. 
+Order list = lijst achter elkaar, deze zit in een comtainer. Elke list = 1 kunstwerk, 1 item 
+
+   
+ // Functie kunst generen in HTML
+    // $('ul') = hetzelfde als document.querySelector. Alleen wordt het niet aangeraden om j.query te gebruiken. 
+   // Hierbij geef ik specifiek aan dat deze in de body zit. ('body ul') de ul staat ook aangeveven in de HTML.
+  // op de pagina wordt tot 20 opgeteld <20, daarna wordt er op de volgende pagina weer opgeteld tot 20 'kunst++
+ // 'beforebegin' geeft aan waar deze in de unorder (ul) list komt. in dit geval dus in de HTML. met de js. functie; insertAdjacentHTML wordt de list in de HTML genereerd.
+// list.insertAdjacentHTML('beforebegin', '<li><a href="#"></li>' = voor elk onderdeel wordt een list item gemaakt. 
+
+In de CSS, de widt aangepast met 50 vw met een correctie van left -50% ipv. width:50% dit geeft een beter respons voor de web. 
+
