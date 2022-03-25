@@ -2,7 +2,7 @@
   "name": "rijksart-progressiveweb",
   "version": "1.0.0",
   "description": "// Uitleg lay-out // 1. variabelen, 2. user story, 3. functies;",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "dev": "nodemon index",
     "start": "nodemon index.js"
@@ -13,6 +13,7 @@
   "dependencies": {
     "date-fns": "^2.28.0",
     "dotenv": "^16.0.0",
+    "ejs": "^3.1.6",
     "express": "^4.17.3",
     "node-fetch": "^3.2.3",
     "uuid": "^8.3.2"
