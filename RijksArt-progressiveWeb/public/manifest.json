@@ -1,0 +1,27 @@
+{
+    "short_name": "ArtLibrary",
+    "name": "ArtLibrary",
+    "start_url": "./",
+    "display": "standalone",
+    "icons": [
+
+      {
+        "src": "/images/icon-palette192x192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/images/icon-palette512x512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+   
+    "background_color": "#e1d5d6",
+    
+    "scope": "/",
+    "theme_color": "rgb(197, 171, 197)",
+    "shortcuts": [
+    
+    ]
+  }

@@ -15,7 +15,10 @@
     "dotenv": "^16.0.0",
     "ejs": "^3.1.6",
     "express": "^4.17.3",
-    "node-fetch": "^3.2.3",
+    "include-node": "^0.2.0",
+    "node-ejs": "^1.2.3",
+    "node-fetch": "^2.6.7",
+    "node-include": "^1.0.5",
     "uuid": "^8.3.2"
   },
   "devDependencies": {
