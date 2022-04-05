@@ -5,11 +5,6 @@ const app = express()
 // mod.cjs
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
 
-// const http = require('http')
-// const path = require('path');
-// const fs = require('fs');
-// const fsPromises = require('fs').promises;
-
 // Data loggen
 const { format } = require('date-fns');
 console.log(format(new Date(), 'yyyyMMdd\tHH:mm:ss'))
@@ -45,7 +40,7 @@ app.get('/', async (req, res)=> {  // ('/' zoekt een url)
  });
 
  app.get('/search', async (req, res)=> {  // ('/' searchbar)
-  const urlArt = `https://www.rijksmuseum.nl/api/en/collection?key=GnjcnmeH&q=${req.query.q}&ps=10`
+  const urlArt = `https://www.rijksmuseum.nl/api/en/collection?key=GnjcnmeH&q=${req.query.q}&ps=100`
   const options = {
     method: 'GET'
   }
@@ -63,6 +58,8 @@ console.log(response)
         })
  });
   
+
+
 // const logEvents = require('./logEvents');
 app.set('port', process.env.PORT || 3500) // const PORT = process.env.PORT || 3500; // Server is running on PORT const = x. If 'x' is not available PORT= 3500
 
