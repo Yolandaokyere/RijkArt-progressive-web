@@ -6,7 +6,7 @@
 * [Wishlist](https://github.com/Yolandaokyere/RijkArt-progressive-web/blob/main/README.md#-wishlist)
 * [Installation](https://github.com/Yolandaokyere/RijkArt-progressive-web/blob/main/README.md#-installation)
 * [Recources](https://github.com/Yolandaokyere/RijkArt-progressive-web/blob/main/README.md#-recources)
-* [License](https://github.com/samclarkb/Barcode-app-PWA#bookmark-license)
+* [License](https://github.com/Yolandaokyere/RijkArt-progressive-web/blob/main/README.md#-license)
 ## 📚 Assesment
 In this course we convert the client side web application, made during the Web App From Scratch course, into a server side rendered application. We also add functionalities based on the Service Worker and turn the application into a Progressive Web App. Finally we’ll implement a series of optimisations to improve the performance of the application.
 
