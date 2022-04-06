@@ -2,9 +2,6 @@
     --headerFontColor:rgb(197, 171, 197);
     --headerBoxshadow: .5em .5em 3em rgb(218, 204, 144);
     --headerColor:rgb(119 110 72);
-    --searchBorderline:solid 2px rgb(75, 69, 45);
-    --searchBackground:rgba(240, 235, 232, 0.904);
-    --searchHoverColor:rgb(200 90 90);
 }
 
 @font-face {
@@ -37,17 +34,14 @@ h1 {
 header {
     display: flex;
     position: fixed;
-    font-family: histograph;
     top: 0;
     left: 0;
     right: 0;
     z-index: 3;
     opacity: 90%;
     box-shadow: var(--headerBoxshadow);
-    /* centering items in the header */
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
     height: 90px;
     background-color: var(--headerColor);
 }
@@ -61,7 +55,6 @@ header {
 
 /* art grid lay out */
 ol {
-    max-width: 100%;
     padding: 29px;
     border: 10px;
     display: grid;
@@ -81,7 +74,6 @@ li img  {
     transition: transform 250ms;
     cursor: pointer;
     opacity: 70%;
-    z-index: 1;
 }
 
 /* h2 = short titleClass */
@@ -91,15 +83,6 @@ li h2 {
     position: relative;
     opacity: 100%; 
     font-family:'Boska';
-}
-
-/* long title */
-li h3 {
-    width: 100%;
-    border-radius: 10px;
-    position: relative;
-    opacity: 100%; 
-    font-family:'Bosch';
 }
 
 /* function hover transform */
