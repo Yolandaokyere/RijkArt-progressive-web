@@ -1,15 +1,14 @@
 // Caching the pages
-const cacheName = "version-3";
- // array of all the pages that I want to cashe
-const contentToCache = ['/','/script/app.js','/style.css'];
- 
-// Call Install event
-self.addEventListener("install", (e) => {
-  console.log("Service worker: Installed");
+const cacheName = "version-4";
+// array of all the pages that I want to cashe
+const contentToCache = ["/", "/script/app.js", "/style.css"];
 
-  e.waitUntil(
+// Call Install event
+self.addEventListener("install", function (event) {
+  console.log("[Service Worker] Install");
+
+  event.waitUntil(
     caches.open(cacheName).then((cache) => {
-      console.log("Service Worker: Caching Files(cacheAssets)");
       return cache.addAll(contentToCache);
     })
   );
@@ -20,7 +19,7 @@ self.addEventListener("activate", (e) => {
   console.log("Service worker: Activated");
   // cleaning up old cache
   e.waitUntil(
-    cashes.keys().then((cacheNames) => {
+    caches.keys().then((cacheNames) => {
       return Promise.all(
         cacheNames.map((cache) => {
           if (cache !== cacheName) {
@@ -36,13 +35,8 @@ self.addEventListener("activate", (e) => {
 // // Call Fetch event
 self.addEventListener("fetch", (e) => {
   e.respondWith(
-    caches.match(e.request).then(() => {
-      return fetch(e.request).then((response) => {
-        return caches.open(cacheName).then((cache) => {
-          cache.put(e.request, response.clone());
-          return response;
-        });
-      });
+    caches.match(e.request).then((cacheRes) => {
+      return cacheRes || fetch(e.request);
     })
   );
 });
