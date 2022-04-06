@@ -1,12 +1,8 @@
 // Caching the pages
-const cacheName = "version-2";
-const contentToCache = [
-  // array of all the pages that I want to cashe
-  "/",
-  "index.ejs",
-  "style.css",
-  "main.js",
-];
+const cacheName = "version-3";
+ // array of all the pages that I want to cashe
+const contentToCache = ['/','/script/app.js','/style.css'];
+ 
 // Call Install event
 self.addEventListener("install", (e) => {
   console.log("Service worker: Installed");

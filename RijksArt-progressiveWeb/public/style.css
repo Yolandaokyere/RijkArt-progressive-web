@@ -25,28 +25,6 @@
 body {
     background-image: url(images/icons-aethetic.jpg);
 }
-/* loading styling for the user */
- .loading {
-     width: 5em;
-     height: 5em;
-     position: absolute;
-     left:calc(50% - 2.5em);
-     top:50%;
-        border: .2em solid rgb(228, 143, 157);
-        border-left-color: currentcolor;
-        border-right-color: currentcolor;
-        border-radius: 50%;
-        animation: 1s loader linear infinite;
-    }
-    
-    @keyframes loader {
-        0% {
-            transform: rotate(0deg);
-        }
-        100% {
-            transform: rotate(360deg);
-        }
-    }
 
 h1 {
     margin: 0 0 -6px;
@@ -131,82 +109,6 @@ li img:hover {
     opacity: 100%;
 }
  
-#form {
-    padding: 5em;
-}
-/* Searchbutton */
-#searchBar {
-	display:flex;
-	align-items:center;
-}
-/* search length */
-#searchBar form {
-	flex-grow:-1;
-	display:flex;
-	justify-content:flex-start;
-}
-/* styling */
-#searchBar input {
-    display: inline-block;
-    position: relative;
-    font-size:.9em;
-	padding:.50em 0em;
-	margin:0;
-	line-height:2em;
-	box-sizing:border-box;
-	outline:none;
-	-webkit-appearance: none;
-}
-
-/* styling */
-#searchBar input[type=search] {
-	border:var(--searchBorderline);
-	background:var(--searchBackground) url(images/search\ icon.png) no-repeat .4em center / 2.1em;
-	width:5em;
-    border-radius: 1.5em 0 1.5em  0;
-    padding: 0 2.8em;
-	overflow:hidden;
-	transition:width 1s, border-radius.33s .67s;
-    cursor: pointer;
-}
-
-#searchBar input[type=submit] {
-	-webkit-appearance: none;
-	border:none;
-	background-color:rgb(99, 94, 74);
-	color:var(--searchBackground);
-	width:0em;
-	overflow:hidden;
-	border-radius:0 1.5em 1.5em 0;
-	transition:1s;
-    cursor: pointer;
-}
-
-#searchBar input[type=search]:focus {
-	width:calc(100% - 3em);
-	border-radius:1.5em 0 0 1.5em;
-	transition:width 1s, border-radius .33s;
-    background-color:var(--searchBackground);
-}
-
-#searchBar input[type=search]:focus + input[type=submit] {
-	width:8.5em;
-}
-
-#searchBar input[type=search]:hover {
-    animation-name: searchHover;
-    animation-iteration-count: 1;
-    animation-duration: 1.5s;
-}
-
-@keyframes searchHover {
-    0% {
-        background-color: none;
-    }
-    100% {
-        background-color:var(--searchHoverColor);
-    }
-}
 
 
 
