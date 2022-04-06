@@ -20,23 +20,23 @@ In this course we convert the client side web application, made during the Web A
 Process in details [click here!](https://github.com/Yolandaokyere/RijkArt-progressive-web/wiki)
 
 ## 📝 Wishlist
-☑️1.  Serverside rendering 
-*  ✔️Render API with node 
-*  ✔️Searchbar
-*  Detail page
-*  Good styling page 
-2. Service worker (render server offline with node)
-3. Critical render path
-4. Convert the server to a progressive web app
-5. Activity Diagram
-6. Wireflow Diagram 
-7. License
+- [x] **Serverside rendering**
+- [x] Render API with node
+- [x] Searchbar
+- [ ] Detail page
+- [ ] Good styling page
+- [x] **Service Workers (render browser offline with node)**
+- [ ] **Critical render path**
+- [ ] Convert the server to a progressive web app
+- [ ] Activity Diagram
+- [ ] Wireflow Diagram
+- [ ] License
  
 ## 🔧 Installation
 Mocht je er zelf wat aan toe willen voegen, neem vooral je tijd!
 
 
 ## 🔎 Recources
-https://www.youtube.com/playlist?list=PL4cUxeGkcC9gTxqJBcDmoi5Q2pzDusSL7
+[YouTube - PWA tutorial](https://www.youtube.com/playlist?list=PL4cUxeGkcC9gTxqJBcDmoi5Q2pzDusSL7)
 ## 🔖 License
 
