@@ -1,6 +1,6 @@
 // Caching the pages
-const cacheName = "version-4";
-// array of all the pages that I want to cashe
+const cacheName = "version-5";
+// Array of all the pages that I want to cashe
 const contentToCache = ["/", "/script/app.js", "/style.css"];
 
 // Call Install event
