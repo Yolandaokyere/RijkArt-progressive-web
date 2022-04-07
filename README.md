@@ -26,7 +26,7 @@ Process in details [click here!](https://github.com/Yolandaokyere/RijkArt-progre
 - [ ] Detail page
 - [ ] Good styling page
 - [x] **Service Workers (render browser offline with node)**
-- [ ] **Critical render path**
+- [x] **Critical render path**
 - [ ] Convert the server to a progressive web app
 - [ ] Activity Diagram
 - [ ] Wireflow Diagram
