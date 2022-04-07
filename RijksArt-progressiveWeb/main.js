@@ -13,7 +13,7 @@ app.use(express.static('public')) // In public map zitten alle mappen die ik geb
 
 // Route for the index
 app.get('/', async (req, res)=> {  // ('/' zoekt een url)
-  const urlArt = `https://www.rijksmuseum.nl/api/en/collection?key=GnjcnmeH&ps=100`
+  const urlArt = `https://www.rijksmuseum.nl/api/en/collection?key=GnjcnmeH&ps=30`
   const options = {
     method: 'GET'
   }
