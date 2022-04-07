@@ -2,15 +2,7 @@
 require('dotenv').config()
 const express = require('express')
 const app = express()
-// mod.cjs
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
-
-// Data loggen
-const { format } = require('date-fns');
-console.log(format(new Date(), 'yyyyMMdd\tHH:mm:ss'))
-const { required } = require('nodemon/lib/config');
-const { v4: uuid } = require('uuid');
-console.log(uuid())
 
 // Stel ejs in als template engine
 app.set('view engine', 'ejs') // Ik  heb een engine en dat heet 'ejs'  
@@ -29,11 +21,10 @@ app.get('/', async (req, res)=> {  // ('/' zoekt een url)
     .then(res => res.json())
     .catch(e => {
       console.error({
-        'message': 'oh no',
+        'Error': 'Can not fetch data-API',
         error: e,
       })
     })
-    // console.log(response)
     res.render('index', {
       data: response.artObjects
         })
@@ -48,7 +39,7 @@ app.get('/', async (req, res)=> {  // ('/' zoekt een url)
     .then(res => res.json())
     .catch(e => {
       console.error({
-        'message': 'oh no',
+        'Error': 'Can not fetch search-API',
         error: e,
       })
     })
