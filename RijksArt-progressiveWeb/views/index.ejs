@@ -15,19 +15,11 @@
     <header>
       <article>
            <h1>Search your favourite ART</h1>
-      <!-- <article id="searchBar"> -->
         <form method="GET" action="/search">
             <input name="q" type="search" placeholder="  search art">
-            <!-- <input name="search-button" type="submit" value="search"> -->
         </form> 
     </header>
-    <div class="profile-container">
-      <div class="kunstImg loading"></div> <!-- will wrap an image tag -->
-      <div class="titleShort loading"></div> <!-- h2 object name -->
-      <div class="kunstTitel loading"></div> <!-- =profile info: title art - year - artist -->
-    </div> 
-    <div class="overlay"> <!-- if principalOrFirstMaker doens't exist -->
-    </div>
+    
             <ol>
 <% data.forEach((artObject)=> { %>
               <li>
@@ -41,7 +33,5 @@
               </li>
 <% }) %>
             </ol>
-            </div>
-    </div>
   </body>
 </html>
