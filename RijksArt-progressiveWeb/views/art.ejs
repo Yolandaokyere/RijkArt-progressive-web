@@ -1,0 +1,12 @@
+<ol>
+  <% data.forEach((artObject)=> { %>
+  <li>
+    <h3 class="titleClass"><%= artObject.longTitle %></h3>
+    <h2 class="titleShort"><%= artObject.title %></h2>
+    <% if(artObject.webImage){ %> <img src="<%= artObject.webImage.url.slice(0,
+    -3) + "=s1000" %>" alt="<%= artObject.title %>"> <% } else{ %>
+    <p>no photos uploaded</p>
+    <% } %>
+  </li>
+  <% }) %>
+</ol>
