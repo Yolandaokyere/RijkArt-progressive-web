@@ -1,4 +1,6 @@
 ## 📱 ArtLibrary progressive web app
+![2022-04-08 (6)](https://user-images.githubusercontent.com/97689634/162440074-43b7e5a9-cf68-4a4a-b6cb-92a66c771a05.png)
+
 ##### Table of Contents
 * [Assesment](https://github.com/Yolandaokyere/RijkArt-progressive-web/blob/main/README.md#-assesment)
 * [Concept](https://github.com/Yolandaokyere/RijkArt-progressive-web/blob/main/README.md#-concept)
@@ -27,13 +29,12 @@ Process in details [click here!](https://github.com/Yolandaokyere/RijkArt-progre
 - [ ] Good styling page
 - [x] **Service Workers (render browser offline with node)**
 - [x] **Critical render path**
-- [ ] Convert the server to a progressive web app
-- [ ] Activity Diagram
-- [ ] Wireflow Diagram
+- [x] Convert the server to a progressive web app
+- [x] **Activity Diagram**
 - [ ] License
  
 ## 🔧 Installation
-Mocht je er zelf wat aan toe willen voegen, neem vooral je tijd!
+
 
 
 ## 🔎 Recources
