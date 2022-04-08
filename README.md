@@ -34,6 +34,8 @@ Process in details [click here!](https://github.com/Yolandaokyere/RijkArt-progre
 - [ ] License
  
 ## 🔧 Installation
+* Clone onderstaande pad in je terminal
+* `gh repo clone Yolandaokyere/RijkArt-progressive-web`
 
 
 
