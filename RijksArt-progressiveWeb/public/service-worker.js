@@ -1,7 +1,8 @@
 // Caching the pages
-const cacheName = "version-5";
+const cacheName = "version-6";
 // Array of all the pages that I want to cashe
 const contentToCache = ["/", "/script/app.js", "/style.css"];
+const dynamicCache = 'site-dynamic-version-1' // dynamicCache voor andere sitegegegevens
 
 // Call Install event
 self.addEventListener("install", function (event) {
@@ -33,10 +34,15 @@ self.addEventListener("activate", (e) => {
 });
 
 // // Call Fetch event
-self.addEventListener("fetch", (e) => {
+self.addEventListener('fetch', (e) => {
   e.respondWith(
-    caches.match(e.request).then((cacheRes) => {
-      return cacheRes || fetch(e.request);
-    })
+    caches.match(e.request).then(cacheRes => {
+      return cacheRes || fetch(e.request).then(fetchRes => {
+      return caches.open(dynamicCache).then(cache => {
+        cache.put(e.request.url, fetchRes.clone());
+        return fetchRes;
+      }) 
+    });
+  })
   );
 });
