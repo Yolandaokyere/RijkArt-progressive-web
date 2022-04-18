@@ -17,7 +17,9 @@ In this course we convert the client side web application, made during the Web A
 
 
 
-## 💡 Concept
+## 💡 Activity Diagram
+![service worker ](https://user-images.githubusercontent.com/97689634/163757743-33a4b573-ff6d-4547-8b5b-69af6d7e1df1.png)
+
 ## 📈 Process
 Process in details [click here!](https://github.com/Yolandaokyere/RijkArt-progressive-web/wiki)
 
