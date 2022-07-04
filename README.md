@@ -44,9 +44,7 @@ It is possible to used information that was pre-cashed with server worker. Inste
 ### 3. Cache
 1. ![2022-04-06 (31)](https://user-images.githubusercontent.com/97689634/162048229-dc6aebdd-de43-4013-a9f5-00462b193035.png)
 
-## Lighthouse
-Improve performance
-# Optimize the performance (Critical Rendering Path)
+## Lighthouse, Optimize the performance (Critical Rendering Path)
 **Chrome audits results before optimalisation:**
 * Prestaties = 36
 * [Chrome audits. rijksart.pwa.pdf](https://github.com/Yolandaokyere/RijkArt-progressive-web/files/8435913/Chrome.audits.rijksart.pwa.pdf)
